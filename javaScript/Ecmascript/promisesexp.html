@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var promises=new Promise((resolve,reject)=>{
+            var id=true;
+            if(id)
+            {
+                console.log('Conditon true');
+                resolve('print text with green clr');
+            }
+            else{
+                 console.log('Conditon false');
+                resolve('print text with red clr');
+            }
+        });
+        promises.then(success,failure)
+        function success(msg)
+        {
+            console.log('promise is successfull')
+            console.log(msg);
+        }
+        function failure(msg) {
+                console.log('promise is failure');
+                console.log(msg);
+            }
+
+    </script>
+</head>
+<h1 class="head1" id='true'>hello all </h1>
+<body>
+    
+</body>
+</html>

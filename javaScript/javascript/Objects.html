@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        obj=new Object()
+        obj.name="Krish";
+        obj.age=20;
+        obj1 = new Object()
+        obj1.name = "RAM";
+         obj1.age = 21;
+    </script>
+    <script>
+           function Emp(name,age,salary)
+           {
+                this.name=name;
+                this.age=age;
+                this.salary=salary;
+           }
+    </script>
+    <script>
+        var e1={'name':'raju','age':22,'salary':20000};
+         var e2 = { 'name': 'rahul', 'age': 22, 'salary': 25000 };
+
+    </script>
+</head>
+<body>
+    <h1>First type of object creation  </h1>
+    <script>
+        document.write('<h2> By using Object Constructor</h2>');
+        document.write('Name'+obj.name);
+         document.write('<br>Age' + obj.age);
+          document.write('<br>Name' + obj1.name);
+           document.write('<br>Age' + obj1.age);
+    </script>
+    <h1>Second type of object creation </h1>
+    <script>
+        var emp=new Emp('kaviya',21,24000);
+        var emp1=new Emp('priya',21,30000);
+        document.write('<h2> By using Function Constructor</h2>');
+        document.write('Name'+emp.name);
+        document.write('<br>Age' + emp.age);
+        document.write('<br>Salary' + emp.salary);
+         document.write('<br>Name' + emp1.name);
+            document.write('<br>Age' + emp1.age);
+            document.write('<br>Salary' + emp1.salary);
+       
+    </script>
+    <h1>Second type of object creation by using json object </h1>
+    <script>
+        document.write('Name'+e1.name);
+        document.write('<br>age' + e1.age);
+        document.write('<br> salary' + e1.salary);
+         document.write('<br>Name' + e2.name);
+         document.write('<br>age' + e2.age);
+         document.write('<br> salary' + e2.salary);
+
+    </script>
+    
+</body>
+</html>
